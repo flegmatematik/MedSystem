@@ -1,0 +1,49 @@
+﻿<Window x:Class="UIMedSystem.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Background="DimGray"
+        BorderThickness="2"
+        BorderBrush="DarkOrchid"
+        WindowStyle="None"
+        Title="Main" Height="500" Width="800" MinWidth="800" MinHeight="500" MaxWidth="800" MaxHeight="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition/>
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <ContentControl x:Name="DynamicContent" Grid.Column="2" Grid.Row="1"/>
+
+        <Button Grid.Column="2" Grid.Row="1" Click="Close" HorizontalAlignment="Right" VerticalAlignment="Top" Background="BlueViolet" Padding="11 5 11 5" FontSize="20" Foreground="Azure" FontWeight="Bold">X</Button>
+
+        <Border Grid.Column="1" Grid.Row="1" BorderThickness="0 0 3 0" BorderBrush="DarkOrchid">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Click="RedirectHome" FontSize="25" Margin="10" Foreground="Azure" Background="DimGray" BorderThickness="0" FontFamily="Arial Nova">Domov</Button>
+                <Button Grid.Row="1" Click="RedirectApps" FontSize="25" Margin="10" Foreground="Azure" Background="DimGray" BorderThickness="0" FontFamily="Arial Nova">Objednávky</Button>
+                <Button Grid.Row="2" Click="RedirectOckovanie" FontSize="25" Margin="10" Foreground="Azure" Background="DimGray" BorderThickness="0" FontFamily="Arial Nova">Očkovania</Button>
+                <Button Grid.Row="4" Click="RedirectWelcome" FontSize="25" Margin="10" Foreground="Azure" Background="DimGray" BorderThickness="0" FontFamily="Arial Nova">Prihlásiť sa</Button>
+            </Grid>
+        </Border>
+
+
+
+    </Grid>
+</Window>

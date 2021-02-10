@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210113190153_UpdatedVysetrenie.cs" />
+    <Compile Remove="Migrations\20210113190153_UpdatedVysetrenie.Designer.cs" />
+    <Compile Remove="Migrations\20210113210131_addedMars.cs" />
+    <Compile Remove="Migrations\20210113210131_addedMars.Designer.cs" />
+    <Compile Remove="Migrations\20210114123346_firstTry.cs" />
+    <Compile Remove="Migrations\20210114123346_firstTry.Designer.cs" />
+    <Compile Remove="Migrations\20210114165705_NullableDates.cs" />
+    <Compile Remove="Migrations\20210114165705_NullableDates.Designer.cs" />
+    <Compile Remove="Migrations\20210129093133_OckovanieAdded.cs" />
+    <Compile Remove="Migrations\20210129093133_OckovanieAdded.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

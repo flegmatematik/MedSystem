@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="UIMedSystem.Home.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UIMedSystem.Home"
+             mc:Ignorable="d" 
+             Background="DimGray" 
+             d:DesignWidth="600" Height="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="GreetBlock" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Foreground="Azure" FontSize="25" FontWeight="Bold" FontFamily="Dubai Medium" Text="Vitajte"/>
+            <TextBlock x:Name="TimeBlock" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Foreground="Azure" FontSize="15" FontFamily="Dubai Medium" Text="Dnes je"/>
+
+            <TextBlock x:Name="ListedAppsLabel" Grid.Column="0" Grid.Row="2" Foreground="Azure" FontSize="20" FontFamily="Dubai Medium" VerticalAlignment="Center">Najbližšie termíny</TextBlock>
+            <ListView x:Name="ListedApps" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Center" MaxHeight="125" Background="DarkViolet"/>
+
+            <TextBlock x:Name="NonAppsLabel" Grid.Column="0" Grid.Row="4" Foreground="Azure" FontSize="20" FontFamily="Dubai Medium" VerticalAlignment="Center">Neobjednané vyšetrenia</TextBlock>
+            <ListView x:Name="NonListedApps" Grid.Column="0" Grid.Row="5" Width="auto" Grid.ColumnSpan="3" VerticalAlignment="Center" MaxHeight="125" Background="DarkViolet"/>
+
+            <Label Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" x:Name="ErrorBox" HorizontalAlignment="Center" Background="OrangeRed" Foreground="Azure" Margin="2" FontSize="15" FontFamily="Dubai Medium" Width="auto" Visibility="Collapsed">Chyba</Label>
+        </Grid>
+    </Grid>
+</UserControl>

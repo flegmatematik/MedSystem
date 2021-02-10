@@ -1,0 +1,12 @@
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\bin\Debug\netcoreapp3.1\MedSystem.Database.deps.json
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\bin\Debug\netcoreapp3.1\MedSystem.Database.runtimeconfig.json
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\bin\Debug\netcoreapp3.1\MedSystem.Database.runtimeconfig.dev.json
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\bin\Debug\netcoreapp3.1\MedSystem.Database.dll
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\bin\Debug\netcoreapp3.1\MedSystem.Database.pdb
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.csprojAssemblyReference.cache
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.AssemblyInfoInputs.cache
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.AssemblyInfo.cs
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.csproj.CoreCompileInputs.cache
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.dll
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.pdb
+C:\Users\loffl\source\repos\MedSystem\MedSystem.Database\obj\Debug\netcoreapp3.1\MedSystem.Database.genruntimeconfig.cache

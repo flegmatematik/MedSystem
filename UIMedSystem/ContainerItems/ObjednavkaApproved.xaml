@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="UIMedSystem.ContainerItems.ObjednavkaApproved"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UIMedSystem.ContainerItems"
+             mc:Ignorable="d" 
+             Background="DarkViolet"
+             d:DesignHeight="50" Width="515">
+    <Border BorderThickness="0,1,0,0" BorderBrush="Orange">
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0"  Foreground="Azure" FontWeight="Bold" Margin="10,0" Padding="0" VerticalAlignment="Center">Pacient:</Label>
+                <TextBlock x:Name="PacientBox" Grid.Column="1" Foreground="Azure" Margin="10,0" Padding="0" VerticalAlignment="Center"></TextBlock>
+
+                <Label Grid.Column="2"  Foreground="Azure" FontWeight="Bold" Margin="10,0" Padding="0" VerticalAlignment="Center">Objednaný dátum:</Label>
+                <TextBlock x:Name="ObjednavkaStavBox" Grid.Column="3" Foreground="Azure" Margin="10,0" Padding="0" VerticalAlignment="Center"></TextBlock>
+
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Foreground="Azure" FontWeight="Bold" Margin="10,0" Padding="0" VerticalAlignment="Center">Dôvod:</Label>
+                <TextBlock x:Name="AppTypeBox" Grid.Column="1" Foreground="Azure" Margin="10,0" Padding="0" VerticalAlignment="Center"></TextBlock>
+
+                <Button Grid.Column="3" Click="ShowDetailObjednavka" Background="DimGray" Foreground="Azure" FontWeight="Bold" BorderBrush="Orange" Padding="2" VerticalAlignment="Center">Detail</Button>
+
+            </Grid>
+        </Grid>
+    </Border>
+
+
+</UserControl>
